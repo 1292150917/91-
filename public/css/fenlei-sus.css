@@ -1,0 +1,27 @@
+﻿/*suspend-search*/
+.suspend-search-wrap{width: 100%;position: fixed;top:0px;left:0px;height: 45px;background: #fff;z-index: 100;padding: 5px 0;-webkit-box-shadow: rgba(0,0,0,.1) 0 1px 5px;-moz-box-shadow: rgba(0,0,0,.1) 0 1px 5px;box-shadow: rgba(0,0,0,.1) 0 1px 5px;}
+.suspend-hide{visibility: hidden;}
+.suspend-show{visibility: visible;}
+.suspend-search-logo{display: block;float: left;width: 138px;height: 45px;background: url(img/logo-tiny.png) no-repeat 0 0;margin-left: 50px;transition:unset;}
+.suspend-search-box{width: 745px;height: 44px;position: relative;margin-left: 200px;display: block;float: left;}
+.suspend-search-body{width: 638px;height: 40px;position: relative;float: left;}
+.sus-body-c1{border: 2px solid #F4543C;border-right: none;}
+.sus-body-c2{border: 2px solid #17CEDD;border-right: none;}
+.sus-triggers-wrap{position: relative;float: left;width: 82px;height: 40px;}
+.sus-triggers{position: absolute;top: 0px;left: 0px;width: 80px;overflow: hidden;height: 40px;line-height: 40px;border-right: solid 1px #e5e5e5;border-left: solid 1px #e5e5e5;}
+.sus-triggers-hover{z-index: 101;background: #fff;height: 80px;border: solid 1px #e5e5e5;border-top: none;}
+.suspend-search-triggers{color: #666666;text-indent: 15px;font-size: 16px;}
+.suspend-search-triggers .selected{background: #f5f5f5;}
+.suspend-trigger{width: 80px;height: 40px;background-color: #fff;cursor: pointer;}
+.sus-keyword{float: left;position: relative;}
+.suspend-search-word{height: 40px;border: none 0;outline: 0;font-size: 16px;padding-left: 5px;width: 551px;color: #9b9ba3;}
+.suspend-search-box input[type=button]{cursor: pointer;height: 44px;width: 101px;overflow: hidden;border: none;outline: none;float: left;color: #fff;font-size: 16px;text-indent: 24px;line-height: 44px;background-image: url(img/fenlei-tiny-icon.png);background-repeat: no-repeat;background-position: -12px -203px;}
+.suspend-search-box .suspend-search-s1{background-color: #F4543C;}
+.suspend-search-box .suspend-search-s2{background-color: #17CEDD;}
+.suspend-search-box .suspend-search-s1:hover{background-color: #FF7460;}
+.suspend-search-box .suspend-search-s2:hover{background-color: #45dce8;}
+.sus-select-arrow{position: absolute;left: 57px;top: 14px;z-index: 102;width: 15px;height: 12px;background: url(img/fenlei-select-arrow.png);background-repeat: no-repeat;background-position: -21px -5px;}
+.sus-triggers-hover .sus-select-arrow{background-position: -21px -38px;}
+@media screen and (max-width: 1600px){
+	.suspend-search-box{margin-left: 90px;}
+}

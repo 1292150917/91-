@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>上传作品-91素材网51yuansu.com</title>
+	<meta name="keywords"
+	content="jQuery特效,网站模板,商城模板,网页特效" />
+<meta name="description" content="91素材网主要收集jQuery网页特效、jQuery网页代码、网站模板、网页模板、企业模板、商城模板、图标等素材，为html网站模板开发人员提供高效率的工作方式。" />
+	<link rel="stylesheet" type="text/css" href="css/upload.css?v=12" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/base.css?v=12" />
+	<script type="text/javascript" src="js/jquery.min.js?v=12"></script>
+	<script type="text/javascript" src="js/base.js?v=12"></script>
+	<script type="text/javascript" src="js/ZeroClipboard.js?v=12"></script>
+	<script>			var _domain = 'http://';
+	</script>
+</head>
+
+<body style="min-width:1200px;">
+	<div id="header-wrap" class="header-wrap">
+
+		<div class="content-flexible">
+			<div class="header-logo-wrap">
+				<a href="./index.html" title="91素材网">91素材网</a>
+			</div>
+			<ul class="header-list">
+				<li class="bcat-li"><a class="bcat-li-a" href="./index.html">首页</a>
+					<div class="bcat-h-wrap">
+						<a href="">漂浮元素</a>
+						<a href="">装饰元素</a>
+						<a href="">节日元素</a>
+						<a href="">手绘/卡通</a>
+						<a href="">字体元素</a>
+						<a href="">标签元素</a>
+						<a href="">图标元素</a>
+						<a href="">背景元素</a>
+						<a href="">动植物元素</a>
+						<a href="">其他元素</a>
+					</div>
+				</li>
+				<li class="bcat-li bbcat-h" style="margin-left:25px;"><a class="bcat-li-a" href="./list.html">网络代码</a>
+					<div class="bcat-h-wrap">
+						<a href="">扁平/简约</a>
+						<a href="">商务/科技</a>
+						<a href="">文艺/清新</a>
+						<a href="">卡通/手绘</a>
+						<a href="">质感/纹理</a>
+						<a href="">摄影/风景</a>
+						<a href="">电商/狂欢</a>
+						<a href="">复古/中国风</a>
+						<a href="">另类/其他</a>
+					</div>
+				</li>
+				<li style="margin-left:25px;"><a class="bcat-li-a" href="./list2.html"
+						onclick="statistNav(1);">桌面壁纸</a><span class="header-zhe-icon"></span></li>
+				<li style="margin-left:25px;"><a class="bcat-li-a" href="">VIP站区</a><span
+						class="header-hot-icon"></span></li>
+				<li style="margin-left:25px;"><a class="bcat-li-a" href="">素材定做</a></li>
+			</ul>
+			<div class="login-info">
+				<ul class="user-login">
+					<li class="mr10"><a href="javascript:void(0);" title="登录" class="header-login-bt"
+							onclick="loginBoxShow();"><span>登录</span></a></li>
+					<li><a href="javascript:void(0);" title="注册" class="header-reg-bt" onclick="regBoxShow();">1秒注册</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-right-icons-wrap">
+				<a class="header-right-icona" href=""><i class="header-ricon-i1" title="赞助VIP"></i>
+					<p>
+						VIP
+					</p>
+				</a><a class="header-right-icona" href="./upload.html" title="上传作品"><i class="header-ricon-i2"></i>
+					<p>
+						上传
+					</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="upload-page-wrap">
+		<div class="upload-page-nav">
+			<ul>
+				<li><a class="current" href="">代码</a></li>
+				<li><a class="" href="">壁纸</a></li>
+			</ul>
+		</div>
+		<div class="w1200">
+			<div class="upload-item-wrap upload-box-shadow" id="upload-item-tpl">
+				<div class="upload-item-left">
+					<img class="upload-preview-img" src="" alt="">
+					<div class="thumb-imgbox-info">
+						<a class="upload-replace-img ys-bgcolor upload-box-shadow" href="javascript:void(0);">替换PNG</a>
+						<p class="special-img-name">
+						</p>
+					</div>
+					<div class="upload-bar-wrap">
+						<div class="upload-bar upload-box-shadow">
+							<div class="upload-bar-item ys-bgcolor">
+								上传缩略图
+							</div>
+							<p class="upload-bar-percent">
+							</p>
+						</div>
+						<p class="upload-img-name">
+						</p>
+					</div>
+					<div class="upload-img-error" style="display: none;">
+						<a href="javascript:void(0);" class="upload-img-errbtn ys-bgcolor">上传失败,删除</a>
+						<div class="upload-img-notice2">
+							<span class="icon"></span><span class="notice"></span>
+						</div>
+						<p class="upload-img-name">
+							doijocxv.png
+						</p>
+					</div>
+					<span class="pic-stop" style="z-index: 3;left:0px;display:none;"></span>
+				</div>
+				<div class="upload-img-notice">
+					<span class="icon"></span><span class="notice"></span>
+				</div>
+				<div class="upload-item-right">
+					<div class="upload-pic-info">
+						<label><b class="ys-color">*</b>标题&nbsp;:</label><input type="text" class="pic-title" value=""
+							placeholder="请输入6-20个汉字">
+					</div>
+					<div class="upload-pic-info">
+						<label><b class="ys-color">*</b>关键词&nbsp;:</label><input type="text" class="pic-keyword"
+							value="" placeholder="至少输入4个关键词,关键词之间用逗号(,)或空格( )隔开">
+					</div>
+					<div class="upload-pic-info">
+						<label><b class="ys-color">*</b>分类&nbsp;:</label>
+						<select name="bcat" class="bcat">
+							<option value="" class="upload-select-i">---------请选择一级分类---------</option>
+							<option value="漂浮元素">漂浮元素</option>
+							<option value="节日元素">节日元素</option>
+							<option value="字体元素">字体元素</option>
+							<option value="手绘/卡通">手绘/卡通</option>
+							<option value="装饰元素">装饰元素</option>
+							<option value="标签元素">标签元素</option>
+							<option value="其他元素">其他元素</option>
+							<option value="动植物元素">动植物元素</option>
+							<option value="图标元素">图标元素</option>
+							<option value="背景元素">背景元素</option>
+						</select>
+						<select name="cat" class="cat" disabled="disabled" style="margin-left: 7px;">
+							<option value="" class="upload-select-i">---------请选择二级分类---------</option>
+						</select>
+					</div>
+					<div class="upload-pic-info">
+						<label>源文件&nbsp;:</label>
+						<div class="upload-psd-w1">
+							<button class="upload-psd-btn" href="javascript:void(0);">上传源文件</button>
+							<p>
+								注:&nbsp;源文件需要压缩为100M以下的rar/zip格式上传(源文件格式为PSD/AI/EPS)
+							</p>
+						</div>
+						<div class="upload-psd-w2" style="left: -99999px;position: absolute;">
+							<div class="upload-pbar upload-box-shadow ys-border">
+								<div class="upload-pbar-item ys-bgcolor">
+								</div>
+								<p class="upload-pbar-percent">
+									正在上传--<b>0%</b>
+								</p>
+								<span class="upload-pbar-del" title="取消上传"></span>
+							</div>
+							<p class="upload-psd-name2">
+							</p>
+						</div>
+						<div class="upload-psd-w3" style="left: -99999px;position: absolute;">
+							<span class="upload-psd-icon"></span>
+							<p class="upload-psd-name">
+							</p>
+							<a href="javascript:void(0);" class="del-psd-btn">(删除源文件)</a><button
+								href="javascript:void(0);" class="replace-psd-btn">替换源文件</button>
+						</div>
+						<p class="upload-psd-notice">
+						</p>
+					</div>
+					<div class="upload-pic-info">
+						<a href="javascript:void(0);" class="pic-submit ys-bgcolor pic-submit-common"
+							style="display: none;">提交</a><a href="javascript:void(0);"
+							class="pic-submit-disabled ys-bgcolor pic-submit-common" style="display: none;">提交</a><span
+							class="submit-notice"></span>
+						<p class="pic-upload-success-notice">
+							恭喜您，上传成功，素材审核中(1-2个工作日)....
+						</p>
+					</div>
+				</div>
+				<span class="upload-item-del" title="删除"></span>
+			</div>
+			<div class="upload-field-wrap upload-box-shadow ys-upload">
+				<div class="upload-field ">
+					<a href="javascript:void(0);" id="upload-pick-img" class="upload-pick-img ys-bgcolor"
+						title="上传PNG">上传介绍图</a><a href="javascript:void(0);" class="upload-pick-img upload-img-disabled"
+						title="上传PNG" style="display: none;">上传PNG</a>
+					<p class="upload-f-txt1">
+						也可以拖拽到这里上传
+					</p>
+					<p class="upload-f-txt2">
+						注意：只能上传<b>小于10M</b>的PNG元素</b>
+					</p>
+					<p class="upload-field-notice">
+						<span class="icon"></span><span class="notice"></span>
+					</p>
+				</div>
+				<div class="upload-agree-wrap">
+					<p>
+						<input type="checkbox" id="upload-agree" name="upload-agree"
+							checked="checked"><span>我已阅读并同意</span><a href="" class="ys-color">《91素材网网上传说明》</a>
+					</p>
+					<p style="margin-left: 178px;color:#999;">
+						禁止传的元素/背景类型：站内重复元素、图片有毛边、模糊、不完整、侵权（有版权的卡通动漫、影视、游戏、真实人物等)
+					</p>
+				</div>
+			</div>
+			<div class="upload-draft-nav">
+				<h3>上传草稿箱</h3>
+				<span>请于上传之日起<b>7天</b>内提交审核，否则草稿将被删除</span><a class="my-upload-ys ys-border my-upload-btn ys-color"
+					href="">我的上传</a>
+			</div>
+			<div class="upload-item-content">
+				<p class="upload-no-content">
+					暂无草稿
+				</p>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer">
+		<div class="content-flexible">
+			<ul class="footer-t">
+				<li><a href="">关于我们</a></li>
+				<li><a href="">版权声明</a></li>
+				<li><a href="">VIP服务</a></li>
+				<li><a href="">素材上传</a></li>
+				<li><a href="">QQ群部落</a></li>
+				<li style="border-right: none;"><a href="http://wpa.qq.com/msgrd?v=3&uin=373604177&site=qq&menu=yes"
+						title="联系91素材网" rel="nofollow">在线客服</a></li>
+			</ul>
+			<ul class="footer-b">
+				<li>Copyright&nbsp;?201891素材网&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;浙ICP备16007586号-1&nbsp;&nbsp;</li>
+				<li style="border-right: none;">&nbsp;&nbsp;浙公网安备&nbsp;33010902001056号&nbsp;&nbsp;</li>
+				<li style="display:none;"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="index-right-box">
+		<ul>
+			<li><a class="rbox-a rbox-boxshadow" href="" rel="nofollow" title="上传图片"><i class="rbox-i1"></i>
+					<p>
+						上传
+					</p>
+				</a></li>
+			<li><a class="rbox-a rbox-boxshadow" href="" rel="nofollow" title="加入QQ群部落"><i class="rbox-i2"></i>
+					<p>
+						QQ群
+					</p>
+				</a>
+				<div class="rbox-qqqun-wrap">
+					<div class="rbox-qqqun-ww rbox-boxshadow">
+						<ul>
+							<li><a href=""><span class="rbox-qun-s1">91素材网官方交流群</span><span
+										class="rbox-qun-s2">加群</span></a></li>
+							<li><a href=""><span class="rbox-qun-s1">91素材网美工UI设计</span><span
+										class="rbox-qun-s2">加群</span></a></li>
+							<li><a href=""><span class="rbox-qun-s1">91素材网设计资源共享</span><span
+										class="rbox-qun-s2">加群</span></a></li>
+							<li><a href=""><span class="rbox-qun-s1">重庆91素材网资深平面</span><span
+										class="rbox-qun-s2">加群</span></a></li>
+						</ul>
+						<a href="" class="rbox-qqqun-all">更多QQ群部落>></a>
+					</div>
+				</div>
+			</li>
+			<li><a class="rbox-a rbox-boxshadow" href="http://wpa.qq.com/msgrd?v=3&uin=373604177&site=qq&menu=yes"
+					rel="nofollow" title="联系客服"><i class="rbox-i3"></i>
+					<p>
+						客服
+					</p>
+				</a>
+				<div class="rbox-kf-wrap">
+					<div class="rbox-kf-ww rbox-boxshadow">
+						<div class="rbox-kf-qq">
+							<p>
+								客服QQ&nbsp;:&nbsp;373604177
+							</p>
+							<a class="rbox-kf-qq-btn" title="联系91素材网"
+								href="http://wpa.qq.com/msgrd?v=3&uin=373604177&site=qq&menu=yes"
+								rel="nofollow">联系客服</a>
+						</div>
+						<div class="rbox-kf-wtime">
+							<p>
+								工作日&nbsp;:&nbsp;9:00-19:00
+							</p>
+						</div>
+						<div class="rbox-kf-notice">
+							<p>
+								反馈时告知客服您的ID哦
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="right-gotop"><a class="rbox-a rbox-boxshadow" href="javascript:void(0);" title="返回顶部"><i
+						class="rbox-i4"></i></a></li>
+		</ul>
+	</div>
+
+</body>
+
+</html>

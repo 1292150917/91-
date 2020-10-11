@@ -1,0 +1,45 @@
+﻿/*crumb*/
+.crumbs{width: 100%;height: 40px;position: relative;background-color: #f5f5f5;overflow: hidden;}
+.crumbs h3{height: 26px;margin-top: 7px;}
+.crumbs span,.crumbs a{font-size: 14px;color: #999999;display: inline-block;float: left;height: 24px;line-height: 24px;}
+.crumbs a:hover{color: #17CEDD;}
+.cancel-cat{display: inline-block;border: 1px dashed #17CEDD;padding: 0px 4px;}
+.crumbs .cancel-cat span{color: #17CEDD;}
+.pos-icon{width: 14px;background: url(img/i-tiny-loc.png) no-repeat center;margin-left: 10px;}
+.crumbs .cancel-cat-i{width: 12px;height: 12px;background: url(img/fenlei-tiny-icon.png) no-repeat -30px -174px;margin-top: 6px;}
+.crumbs .cancel-cat-i:hover{background-color: #ddd;}
+/*cat*/
+.fenlei-wrap{width: 100%;height: 120px;position: relative;}
+.bcat-wrap{padding-top: 21px;height: 32px;}
+.color-wrap{padding-top: 14px;height: 30px;}
+.cat-pre-notice,.bcat-wrap li a,.cat-sort-wrap li a{font-size: 14px;display: inline-block;}
+.cat-pre-notice{float: left;height: 30px;line-height: 30px;font-weight: bold;color: #4a4747;margin-left: 10px;}
+.bcat-wrap li,.cat-sort-wrap li{float: left;height: 32px;margin:0px 10px;}
+.bcat-wrap li a,.cat-sort-wrap li a{height: 30px;padding: 0px 10px;line-height: 30px;color: #666666;}
+.bcat-wrap li a:hover{color: #17CEDD;}
+.bcat-wrap li a.current,.cat-sort-wrap li a.current{border-radius: 5px;color: #fff;background-color: #17CEDD;border-bottom: none;}
+.cat-sort-wrap ul{display: inline-block;}
+.cat-sort-wrap{width: 100%;height: 50px;position: relative;border-top: 1px solid #EDEDED;}
+.cat-order-wrap,.cat-format-wrap,.shape-style-wrap{padding-top: 9px;height: 32px;float: left;}
+.cat-format-wrap,.shape-style-wrap{margin-right: 80px;}
+.cat-sort-wrap a:hover{color: #17CEDD;}
+.color-wrap ul{display: inline-block;margin-left: 20px;margin-top: 8px;}
+.color-wrap li{display: inline-block;width: 80px;height: 14px;text-align: center;cursor: pointer;float: left;}
+.color-wrap li.white{border-top: 1px solid #E8E8E8;border-bottom: 1px solid #E8E8E8;height: 12px;}
+.color-null{background: url(img/color-null.png) no-repeat center;}
+.color-wrap li a{display: inline-block;width: 100%;height: 14px;background: 0;transition: unset;}
+.color-wrap li.active a,.color-wrap li:hover a{background: url(img/fenlei-tiny-icon.png) no-repeat 4px -53px;}
+/*pic-content*/
+.pic-content-wrap{width: 100%;position: relative;background-color: #f5f5f5;padding-top: 11px;overflow: hidden;}
+.s-rel-wrap{display: block;border: 1px dashed #17CEDD;height: 34px;}
+.s-rel-wrap a,.s-rel-wrap span{font-size: 14px;color: #808080;display: inline-block;float: left;margin-top: 7px;}
+.s-rel-wrap a{margin-right: 22px;}
+.s-rel-wrap a:hover{color: #17CEDD;}
+.s-rel-wrap span{margin-left: 10px;}
+.page .pager-wrap a:hover, .page .pager-wrap .pre-page:hover, .page .pager-wrap .nextpage:hover, .page .pager-wrap .pager-content .current{background: #17CEDD;}
+.f-content,.t-content{position: relative;}
+.f-content{margin-top: 10px;}
+.flex-images{overflow: hidden;position: relative;}
+@media screen and (max-width: 1600px){
+	.cat-format-wrap,.shape-style-wrap{margin-right: 35px;}
+}
